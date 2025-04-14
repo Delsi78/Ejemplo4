@@ -1,0 +1,42 @@
+body{
+    height: 100vh;
+    margin: 0;
+    background-color: aqua;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.titulo{
+    text-align: center;
+}
+.container{
+    display: wrap;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+    padding: 20px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+.formulario{
+    display: wrap;
+    align-items: center;
+    background-color: white;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-right: 15px;
+}
+.result{
+    display: wrap;
+    align-items: self-end;
+    background-color: white;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-left: 15px;
+    padding: 20px;
+    text-align: end;
+}

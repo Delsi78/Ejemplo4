@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de Unidades</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="titulo">Convertidor de Unidades</h1>
+    <div class="container">
+        <form action="" class="formulario">
+            <h2>Masa</h2>
+            <div class="masa" id="masa">
+                <input type="number" name="cantidad" value="1" id="cantidadMasa" class="cantidad">
+                <br>
+                <select name="masaOriginal" id="masaOriginal" onchange="convertirMasa()">
+                    <optgroup label="Métrico">
+                        <option>Toneladas (t)</option>
+                        <option>Kilogramo (kg)</option>
+                        <option>Hectogramo (hg)</option>
+                        <option>Decagramo (dag)</option>
+                        <option>Gramo (g)</option>
+                        <option>Decigramo (dg)</option>
+                        <option>Centigramo (cg)</option>
+                        <option>Miligramo (mg)</option>
+                    </optgroup>
+                </select>
+                <p><b>A:</b></p>
+                <select name="masaNueva" id="masaNueva" onchange="convertirMasa()">
+                    <optgroup label="Métrico">
+                        <option>Toneladas (t)</option>
+                        <option>Kilogramo (kg)</option>
+                        <option>Hectogramo (hg)</option>
+                        <option>Decagramo (dag)</option>
+                        <option>Gramo (g)</option>
+                        <option>Decigramo (dg)</option>
+                        <option>Centigramo (cg)</option>
+                        <option>Miligramo (mg)</option>
+                    </optgroup>
+                </select>
+                <br>
+                <div class="result" id="resultadoMasa">1</div>
+            </div>
+        </form>
+        <br>
+        <form action="" class="formulario">
+            <h2>Longitud</h2>
+            <div class="longitud" id="longitud">
+                <input type="number" name="cantidad" value="1" id="cantidadLongitud" class="cantidad">
+                <br>
+                <select name="longitudOriginal" id="longitudOriginal" onchange="convertirLongitud()">
+                    <optgroup label="Métrico">
+                        <option>Kilómetro (km)</option>
+                        <option>Hectómetro (hm)</option>
+                        <option>Decámetro (dam)</option>
+                        <option>Metro (m)</option>
+                        <option>Decimetro (dm)</option>
+                        <option>Centimetro (cm)</option>
+                        <option>Milimetro (mm)</option>
+                    </optgroup>
+                </select>
+                <p><b>A:</b></p>
+                <select name="longitudNueva" id="longitudNueva" onchange="convertirLongitud()">
+                    <optgroup label="Métrico">
+                        <option>Kilómetro (km)</option>
+                        <option>Hectómetro (hm)</option>
+                        <option>Decámetro (dam)</option>
+                        <option>Metro (m)</option>
+                        <option>Decimetro (dm)</option>
+                        <option>Centimetro (cm)</option>
+                        <option>Milimetro (mm)</option>
+                    </optgroup>
+                </select>
+                <br>
+                <div class="result" id="resultadoLongitud">1</div>
+            </div>
+        </form>
+        <br>
+        <form action="" class="formulario">
+            <h2>Temperatura</h2>
+            <div class="temperatura" id="temperatura">
+                <input type="number" name="cantidad" value="1" id="cantidadTemperatura" class="cantidad">
+                <br>
+                <select name="temperaturaOriginal" id="temperaturaOriginal" onchange="convertirTemperatura()">
+                    <optgroup label="Cientifíca">
+                        <option>Centígrados (°C)</option>
+                        <option>Fahrenheit (°F)</option>
+                        <option>Kelvin (K)</option>
+                    </optgroup>
+                </select>
+                <p><b>A:</b></p>
+                <select name="temperaturaNueva" id="temperaturaNueva" onchange="convertirTemperatura()">
+                    <optgroup label="Cientifíca">
+                        <option>Centígrados (°C)</option>
+                        <option>Fahrenheit (°F)</option>
+                        <option>Kelvin (K)</option>
+                    </optgroup>
+                </select>
+                <br>
+                <div class="result" id="resultadoTemperatura">1</div>
+            </div>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+:root{
+    --color-fondo: #dad4d4ea;
+    --color-texto: #413e3e;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+body{    
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+.flecha{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    position: absolute; /* Cambio de posición */
+    top: 50%; /* Alineación vertical al centro */
+}
+.flecha:hover{
+    background-color: #413e3e;
+}
+
+#retroceso {
+    left: 5%; /* Alineación a la izquierda */
+}
+
+#adelante {
+    right: 5%; /* Alineación a la derecha */
+}
+#imagenContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40%;
+}
