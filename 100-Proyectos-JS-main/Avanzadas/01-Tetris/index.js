@@ -7,6 +7,7 @@ class Particle {
     this.speedX = (Math.random() - 0.5) * 5;
     this.speedY = (Math.random() - 0.5) * 10;
     this.alpha = 1;
+
   }
 
   draw(ctx) {
@@ -517,3 +518,4 @@ class TetrisGame {
 const canvas = document.getElementById("tetris-board");
 const nextPieceCanvas = document.getElementById("next-piece-canvas");
 new TetrisGame(canvas, nextPieceCanvas);
+//thanks
